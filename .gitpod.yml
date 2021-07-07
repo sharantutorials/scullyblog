@@ -1,0 +1,14 @@
+image:
+  file: .gitpod.dockerfile
+
+tasks:
+- command: |
+    nvm install 14.17.0
+    nvm alias default 14.17.0
+    npx @angular/cli analytics off
+    npm i -g @angular/cli
+    npm install
+vscode:
+  extensions:
+    - loiane.angular-extension-pack@0.9.0:6QpFyhxFQG4yh4pCiu7z2w==
+    - mikael.angular-beastcode@10.0.3:449d9b32ebd4a40b83eb70f9a2c28732
